@@ -30,20 +30,10 @@ public class move : MonoBehaviour
             panel.SetActive(true);
             panel2.SetActive(false);
         }
-        if (Input.GetKey(KeyCode.R))
-        {
-            panel .SetActive(false);
-            transform.position = new Vector3(1.19f, 0.8f, -0.85f);
-        }
     }
     void FixedUpdate()
     {
-        // Point 1.
-        h = Input.GetAxis("Horizontal");        // 가로축
-        v = Input.GetAxis("Vertical");          // 세로축
-
-        // Point 2.
-        transform.position += new Vector3(h, 0, v) * Speed * Time.deltaTime;
+        //code here
     }
    
 }

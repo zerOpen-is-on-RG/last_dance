@@ -17,23 +17,6 @@ public class enemy_move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        
-             if (Input.GetKey(KeyCode.Keypad4)) {        
-                transform.Translate(-speed * Time.deltaTime, 0, 0);           
-              }
-            if (Input.GetKey(KeyCode.Keypad6)) {
-              transform.Translate(speed * Time.deltaTime, 0, 0);           
-            }
-
-        if (Input.GetKey(KeyCode.Keypad5))
-        {
-            if (time > 3f)
-            {
-                Instantiate(go, transform.position - new Vector3(0, 0, 2), Quaternion.identity);
-                time = 0.0f;
-            }
-        }
-      
+        //code here
     }
 }
